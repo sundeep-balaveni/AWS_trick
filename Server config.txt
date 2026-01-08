@@ -1,0 +1,67 @@
+Adding User to the server :
+
+
+----------------------------------------------------------------------
+Create a user -  useradd <Name of the file>
+Groupdd <name>
+
+----------------------------------------------------------------------
+Add user to that particular group 
+
+usermod -g <Groupname>  <Username>
+
+Users - One primarygroup , Onesecondary grop
+
+_______________________________________
+If the person involved in other activities 
+
+
+Seconday group 
+usermod -aG <Groupname-2> <Username>
+
+---------------------------------------------------------------------
+
+Set the password 
+
+passwd <Username>
+
+config the sshd config , etc/ssh/sshd  -- > yes
+ sshd -t
+
+Restart the ssh service
+
+systemctl restart sshd
+
+Granting permissions 
+____________________________
+
+> /etc/sudeors
+
+Find wheel group same as root permissions 
+
+usermod -aG wheel <username>
+
+____________________________________
+
+
+if we need specific permissions 
+
+/ect/sudoers   --> Down the wheel give the path(type which)  -- > Give the path 
+
+
+remove from the group
+____________________________________
+
+sudo gpasswd -d venkat testing
+
+
+If he is leaving the org 
+_______________________________________
+
+1 > Lock him [Usermod -L <username>]
+2 ] sudo gpasswd -d venkat testing
+3]Bring back to the same postion [usermod -g Ramesh ramesh]
+Zipping his folders [ sudo tar -cf devops.tar.gz audit[file in the sytem ]]
+
+Unzipp --------------------------->  sudo tar -cf devops.tar.gz audit
+
