@@ -45,7 +45,7 @@ chmod 600 authorized_keys
 change the permissions to others only user can access .ssh {chmod 700}
 ________________________________________________________________________________________________
 
-installing packages 
+*******************installing packages*************************** 
 
 
 yum - >old rhel 
@@ -56,5 +56,14 @@ dnf install <package-name > - > redhat based instances
 /etc/yum.repos.d / - all URLS configured 
 
 dnf install <package name>
+
+dnf remove nginx -y
+
+dnf list intstalled -> which packages are installed
+
+dnf list available ----> Availab;e packages
+
+dnf search python 
+
 
 
