@@ -65,5 +65,11 @@ dnf list available ----> Availab;e packages
 
 dnf search python 
 
+Sudo systemctl start nginx
+
+sudo systmctl enable nginx 	
+
+cinfig the port 
+
 
 
