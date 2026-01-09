@@ -1,0 +1,60 @@
+-----Permissions for a file ----
+
+R , W , X
+4 , 2 , 1 
+   
+
+
+-r --rw --x ----- <Filename>
+
+-user --group --others    ------------- <filename>
+
+
+
+modify the permissions ------> chmod  0+x  <filename>  , chmod u+w <filenanme> 
+
+< Either owner of the file or root user can only change the file permsion >
+
+Removing the file permissons  ----------->   chmod o-x  <filename> 
+
+_________________________________________________________
+
+Through Numbers ------> chmod 777 [user . group , other]  filename    
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+                                                      ******* OWNERSHIP ***********
+
+< Ownership can only be changed by root user not even owner of the file  > 
+
+changing the ownership ----> chown <user>:<group> <filename> 
+
+
+How to give access to particular user as key based authentication
+___________________________________________________________________________________________________
+
+> User should generate the pub_key and private 
+> go to the original server and /etc/ssh
+create a file authorized_keys 
+paste the pub_key 
+
+change the owner in Rahim server to Rahim    [  chown Rahim : Rahim -R .ssh/ ]
+
+chmod 600 authorized_keys
+
+change the permissions to others only user can access .ssh {chmod 700}
+________________________________________________________________________________________________
+
+installing packages 
+
+
+yum - >old rhel 
+dnf - >latest
+
+dnf install <package-name > - > redhat based instances 
+
+/etc/yum.repos.d / - all URLS configured 
+
+dnf install <package name>
+
+
