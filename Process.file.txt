@@ -87,7 +87,9 @@ sleep 10 &  -- >
 
 Kill the process -> kill < process id [NOT THE STARTED ID PARENT ]> and restart the process 
 
-ping google.com > google.log   ----  " > " "INDICATED SAVING THE LOGS INTO GOOGLE.LOG"
+ping google.com > google.log   ----  " > " "INDICATED SAVING THE LOGS INTO GOOGLE.LOG"   
+
+tail -f <filename > --------------shows the running logs
 
 top - > How much resource it was consumed 
 
