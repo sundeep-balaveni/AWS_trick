@@ -2,3 +2,6 @@
 
 
 Load banacer  -- > App server -- > web server  ------->  Database 
+
+
+Microservices
