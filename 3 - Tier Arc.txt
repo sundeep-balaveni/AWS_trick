@@ -1,0 +1,4 @@
+3 - Tier Arc
+
+
+Load banacer  -- > App server -- > web server  ------->  Database 
